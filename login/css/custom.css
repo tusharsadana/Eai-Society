@@ -1,0 +1,22 @@
+.logoimage{
+	max-width:1em;
+	max-height: 1em;
+		}
+
+.bluecolor{
+	background: #88cdeb;
+}
+.speakerContainer {
+    margin: 0 auto;
+    padding-left: 15px;
+    margin-bottom: 40px;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+.justify{
+    text-align: justify;
+}
