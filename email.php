@@ -3,17 +3,17 @@ require("PHPMailerAutoload.php");
 
 $mail = new PHPMailer();
 
-//$mail->IsSMTP();                                      // set mailer to use SMTP
+$mail->IsSMTP();                                      // set mailer to use SMTP
 $mail->Host = "smtp.gmail.com";  // specify main and backup server
 $mail->SMTPAuth = true;     // turn on SMTP authentication
-$mail->Username = "searching.for.langoor@gmail.com";  // SMTP username
+$mail->Username = "tusharsadana@gmail.com";  // SMTP username
 $mail->Password = "TS!@#HILLS"; // SMTP password
 $mail->Port= "587";
 
-$mail->From = "searching.for.langoor@gmail.com";
+$mail->From = "tusharsadana@gmail.com";
 $mail->FromName = "Mailer";
-$mail->AddAddress("monikalnct@gmail.com", "EAI SOCIETY");
-$mail->AddAddress("rahulsaxena0812@gmail.com", "EAI SOCIETY");
+$mail->AddAddress("tusharsadana@gmail.com", "EAI SOCIETY");
+
 
 
 $mail->WordWrap = 50;                                 // set word wrap to 50 characters
@@ -34,7 +34,8 @@ if(!$mail->Send())
    exit;
 }
 
-echo "Message has been sent";
+echo "Message has been sent. Redirecting...";
 
-header("Location: index.html");
+
 ?>
+<meta http-equiv="refresh" content="1.5; url=index.php" />

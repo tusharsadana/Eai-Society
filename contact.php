@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>EAI | Contact Us</title>
 
-<link rel="shortcut icon" type="image/png" href="images/EAI.png"/>
+<link rel="shortcut icon" type="image/png" href="login/images/EAI.png"/>
 <!-- Bootstrap -->
 <link href="login/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="login/css/bootstrap.css" rel='stylesheet' type='text/css' />
@@ -33,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 <div class="header_bg1">
 <div class="container">
-		<?php require "loginform.php"; ?>
+	
 	<div class="row header">
 		<div class="logo navbar-left">
 			<h1 ><a href="index.html"><img class="logoimage" src="login/images/EAI.png" />	EAI SOCIETY </a><br><h5 style="opacity:0.6">Exploration and Analysis of Information</h5></h1>
@@ -60,10 +60,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li><a href="index.php">Home</a></li>
-		        <li><a href="technology.php">Events</a></li>
-		        <li><a href="about.php">Membership</a></li>
+		        <li><a href="events.php">Events</a></li>
+		        <li><a href="membership.php">Membership</a></li>
 		        <!-- <li><a href="blog.html">Blog</a></li> -->
-				<li><a href="mem.php">Members</a></li>
+				<li><a href="members.php">Members</a></li>
 
 		        <li class="active"><a href="contact.php">Contact</a></li>
 		      </ul>
@@ -109,7 +109,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-8">
 				  <div class="contact-form">
 				  	<h2>Contact Us</h2>
-					    <form method="post" action="contact-post.html">
+					    <form method="post" action="email.php">
 					    	<div>
 						    	<span>name</span>
 						    	<span><input type="username" class="form-control" name="name"></span>
@@ -138,11 +138,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- <div class="copy text-center">
 			</div> -->
 			<div style="float:right;">
-					Visitors<br>
-				<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
-				
-				
-			</div>
+			Visitors<br>
+		<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
+		
+		
+	</div>
 		</div>
 	</div>
 </div>

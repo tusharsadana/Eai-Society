@@ -7,9 +7,7 @@ $type    = $conn->real_escape_string($_POST['type']);
 $fname    = $conn->real_escape_string($_POST['f_name']);
 $mname    = $conn->real_escape_string($_POST['m_name']);
 $lname    = $conn->real_escape_string($_POST['l_name']);
-$user = $conn->real_escape_string($_POST['username']);
-$pass = $conn->real_escape_string($_POST['password']);
-$pass1 = $conn->real_escape_string($_POST['password1']);
+
 
 $dob = $conn->real_escape_string($_POST['dob']);
 $gen = $conn->real_escape_string($_POST['gender']);
@@ -26,55 +24,27 @@ $fax = $conn->real_escape_string($_POST['fax']);
 $email = $conn->real_escape_string($_POST['email']);
 $q1=$conn->real_escape_string($_POST['interest']);
 $other = $conn->real_escape_string($_POST['other']);
-$flag=1;
-if (empty($fname) || empty($user) || empty($email) || empty($pass) || empty($pass1) || empty($country) || empty($phone)){
-    $error = "Complete all fields";
-    $flag = 0;
-}
 
-if ($pass != $pass1){
-    $error = "Passwords do not match";
-    $flag = 0;
+if (empty($fname)  || empty($email)  || empty($country) || empty($phone)){
+    echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Complete All Fields.</div><div id="returnVal" style="display:none;">false</div>';
     
 }
-
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    $error = "Enter a Valid email";
-    $flag = 0;
-}
-
-if (strlen($pass) <= 6){
-    $error = "Choose a password longer then 6 character";
-    $flag = 0;
-}
-if($flag){
-    //no error
-    $sthandler = "SELECT count(*) FROM `form` WHERE username = '".$user."'";
-    echo $sthandler;
+elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) == true) {
+    
+        echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Must provide a valid email address</div><div id="returnVal" style="display:none;">false</div>';
+    
+ } else {
    
     
-
-        if($sthandler > 0){
-            echo "<script type='text/javascript'>alert('Username Already Taken');</script>";
-        } 
-        else {
-            $query   = "INSERT INTO `form`(`f_name`, `m_name`, `l_name`, `username`, `password`, `password1`, `dob`, `gender`, `job`, `aff`, `street`, `city`, `state`, `postal`, `country`, `q1`, `other`, `phone`, `fax`, `email`, `type`) VALUES ('" . $fname . "','" . $mname . "','" . $lname . "','" . $user . "','" . $pass . "', '" . $pass1 . "', '" . $dob . "','" . $gen . "','" . $job . "','" . $aff . "','" . $street . "','" . $city . "','" . $state . "','" . $postal . "','" . $country . "','" . $q1 . "','" . $other . "','" . $phone . "','" . $fax . "','" . $email . "','" . $type . "')";
-            
+            $query = "INSERT INTO `form`( `type`, `f_name`, `m_name`, `l_name`, `dob`, `gender`, `job`, `aff`, `street`, `city`, `state`, `postal`, `country`, `phone`, `fax`, `email`, `interest`, `other`) VALUES ('" . $type . "','" . $fname . "','" . $mname . "','" . $lname . "','" . $dob . "','" . $gen . "','" . $job . "','" . $aff . "','" . $street . "','" . $city . "','" . $state . "','" . $postal . "','" . $country . "','" . $phone . "','" . $fax . "','" . $email . "','" . $q1 . "','" . $other . "')";
             $success = $conn->query($query);
-        }
-        echo "<script type='text/javascript'>alert('Success');</script>"; 
-    }
-else {
-    echo "<script type='text/javascript'>alert('$error');</script>";
-    header("Location: about.html");
+        
+            echo 'Thank You For Registering.            Redirecting...';
 }
-// else{
-//     echo "<script type='text/javascript'>alert('Success');</script>";
-    
-// }
- 
-header("Location: index.html");
+
+
  
 $conn->close();
  
 ?>
+<meta http-equiv="refresh" content="2; url=index.php" />

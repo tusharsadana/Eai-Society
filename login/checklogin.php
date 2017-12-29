@@ -59,5 +59,5 @@ if ($lastAttempt['attempts'] < $max_attempts && $response != 'true') {
 unset($resp, $jsonResp);
 ob_end_flush();
 ?>
-<meta http-equiv="refresh" content="0.1;url=../about.php" />
+<meta http-equiv="refresh" content="0.1;url=../membership.php" />
 

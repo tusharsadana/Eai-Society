@@ -64,9 +64,9 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li><a href="../index.php">Home</a></li>
-		        <li><a href="../technology.php">Events</a></li>
-		        <li><a href="../about.php">Membership</a></li>
-						<li><a href="../mem.php">Members</a></li>
+		        <li><a href="../events.php">Events</a></li>
+		        <li><a href="../membership.php">Membership</a></li>
+						<li><a href="../members.php">Members</a></li>
 		        <!-- <li><a href="blog.html">Blog</a></li> -->
 		        <li><a href="../contact.php">Contact</a></li>
 		      </ul>

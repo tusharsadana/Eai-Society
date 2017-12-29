@@ -4,7 +4,7 @@
 <head>
 <title>EAI Society</title>
 
-<link rel="shortcut icon" type="image/png" href="images/EAI.png"/>
+<link rel="shortcut icon" type="image/png" href="login/images/EAI.png"/>
 <!-- Bootstrap -->
 <link href="login/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="login/css/custom.css" rel='stylesheet' type='text/css' />
@@ -66,7 +66,6 @@
 			<!-- </a>                                        <br/> -->
 												
 										
-			<?php require "loginform.php"; ?>
 	<div class="row header">
 		<div class="logo navbar-left">
 			<h1 id="brand"><a href="index.html"><img class="logoimage" src="login/images/EAI.png" />	EAI SOCIETY </a><br><h5 style="opacity:0.6">Exploration and Analysis of Information</h5></h1>
@@ -97,10 +96,10 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="index.php">Home</a></li>
-		        <li><a href="technology.php">Events</a></li>
-		        <li><a href="about.php">Membership</a></li>
+		        <li><a href="events.php">Events</a></li>
+		        <li><a href="membership.php">Membership</a></li>
 		        <!-- <li><a href="blog.html">Blog</a></li> -->
-				<li><a href="mem.php">Members</a></li>
+				<li><a href="members.php">Members</a></li>
 
 		        <li><a href="contact.php">Contact</a></li>
 		      </ul>
@@ -214,7 +213,7 @@
 								<img class="lazyOwl" data-src="login/images/c1.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="mem.php#sandeepjoshi">Prof. Sandeep Joshi</a></h4>
+								<h4><a href="members.php#sandeepjoshi">Prof. Sandeep Joshi</a></h4>
 								<h5>Secretary</h5>
 								<p style="text-align:justify">
 									
@@ -226,7 +225,7 @@
 								<img class="lazyOwl" data-src="login/images/rahul.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="mem.php#rahulsaxena">Mr. Rahul Saxena</a></h4>
+								<h4><a href="members.php#rahulsaxena">Mr. Rahul Saxena</a></h4>
 								<h5>Joint Secretary</h5>
 								<!-- <p style="text-align:justify">
 									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
@@ -238,7 +237,7 @@
 								<img class="lazyOwl" data-src="login/images/monika.jpg" alt="Lazy Owl Image">
 							</div>
 							<div class="cau_left">
-								<h4><a href="mem.php#monikajain">Ms. Monika Jain</a></h4>
+								<h4><a href="members.php#monikajain">Ms. Monika Jain</a></h4>
 								<h5>Joint Secretary</h5>
 								<!-- <p style="text-align:justify">
 									On the other hand, we denounce with righteous indignation and dislike men who are so beguiled  pleasure of the moment,
@@ -349,16 +348,16 @@
 					<!----//End-img-cursual---->
 	</div>
 </div>
-<div class="bluecolor"><!-- start footer -->
+<div style="background-color:#f6f6f6;"><!-- start footer -->
 	<div class="container">
 		<div class="row  footer">
 		<!-- Your name here tushar sir -->
 		<div style="float:right;">
-			Visitors<br>
-		<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
-		
-		
-	</div>
+		Visitors<br>
+	<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
+	
+	
+</div>
 	
 	</div>
 	</div>
@@ -367,9 +366,11 @@
 .div {
     transition: background-color 0.5s ease;
     background-color: white;
+	padding:1em;
   }
   .div:hover {
     background-color: #88cdeb;
+	padding:1em;
   }</style>
 <script src="https://use.fontawesome.com/7b187f2b75.js"></script>
 </body>

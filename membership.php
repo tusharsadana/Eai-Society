@@ -1,14 +1,10 @@
-<?php
-if (!isset($_SESSION['username'])) {
-echo "yhghjgjhgO";
-}
-?>
+<?php require "login/loginheader.php" ?>
 
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>EAI Society</title>
-<link rel="shortcut icon" type="image/png" href="images/EAI.png"/>
+<title>EAI Society | Membership</title>
+<link rel="shortcut icon" type="image/png" href="login/images/EAI.png"/>
 <!-- Bootstrap -->
 <link href="login/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="login/css/custom.css" rel='stylesheet' type='text/css' />
@@ -32,11 +28,12 @@ echo "yhghjgjhgO";
 <body>
 <div class="header_bg1">
 <div class="container">
-<?php require "loginform.php"; ?>
+
 	<div class="row header">
-		<div class="logo navbar-left">
-			<h1 ><a href="index.html"><img class="logoimage" src="images/EAI.png" />	EAI SOCIETY </a><br><h5 style="opacity:0.6">Exploration and Analysis of Information</h5></h1>
-		</div>
+	<div style="float:right;"><a href="login/logout.php">Logout</a></div>
+	<div class="logo navbar-left">
+	<h1 id="brand"><a href="index.html"><img class="logoimage" src="login/images/EAI.png" />	EAI SOCIETY </a><br><h5 style="opacity:0.6">Exploration and Analysis of Information</h5></h1>
+</div>
 		<!-- <div class="h_search navbar-right">
 			<form>
 				<input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
@@ -60,9 +57,9 @@ echo "yhghjgjhgO";
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li><a href="index.php">Home</a></li>
-		        <li><a href="technology.php">Events</a></li>
-		        <li  class="active"><a href="about.php">Membership</a></li>
-		        <li><a href="mem.php">Members</a></li>
+		        <li><a href="events.php">Events</a></li>
+		        <li  class="active"><a href="membership.php">Membership</a></li>
+		        <li><a href="members.php">Members</a></li>
 				<!-- <li><a href="blog.html">Blog</a></li> -->
 		        <li><a href="contact.php">Contact</a></li>
 		      </ul>
@@ -113,9 +110,6 @@ echo "yhghjgjhgO";
 								<span><input type="text" name="f_name" class="form-control" placeholder="First Name" required></span>
 								<span><input name="m_name" type="text" class="form-control" placeholder="Middle Name"></span>
 								<span><input name="l_name" type="text" class="form-control" placeholder="Last Name" required></span>
-								<span><input name="username" type="text" class="form-control" placeholder="Username" required></span>
-								<span><input name="password" type="password" class="form-control" placeholder="Password" required></span>
-								<span><input name="password1" type="password" class="form-control" placeholder="Enter Your Password Again" required></span>
 								
 								 &nbsp Date of Birth
 								<span><input name="dob" type="date" class="form-control" placeholder="Date of Birth" required></span>
@@ -178,6 +172,7 @@ echo "yhghjgjhgO";
 						   <div>
 						   		<label class="fa-btn btn-1 btn-1e"><input type="submit" value="submit"></label>
 						  </div>
+						  <div id="message"></div>
 					    </form>
 				    </div>
   			</div>			
@@ -188,12 +183,12 @@ echo "yhghjgjhgO";
 <div class="footer_bg"><!-- start footer -->
 	<div class="container">
 		<div class="row  footer">
-				<div style="float:right;">
-						Visitors<br>
-					<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
-					
-					
-				</div>
+		<div style="float:right;">
+		Visitors<br>
+	<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
+	
+	
+</div>
 		</div>
 	</div>
 </div>

@@ -3,7 +3,7 @@
 <html>
 <head>
 <title>EAI Society</title>
-<link rel="shortcut icon" type="image/png" href="images/EAI.png"/>
+<link rel="shortcut icon" type="image/png" href="login/images/EAI.png"/>
 <!-- Bootstrap -->
 <link href="login/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <link href="login/css/custom.css" rel='stylesheet' type='text/css' />
@@ -27,11 +27,11 @@
 <body>
 <div class="header_bg1">
 <div class="container">
-	<?php require "loginform.php"; ?>
+
 	<div class="row header">
-		<div class="logo navbar-left">
-			<h1 ><a href="index.html"><img class="logoimage" src="images/EAI.png" />	EAI SOCIETY </a><br><h5 style="opacity:0.6">Exploration and Analysis of Information</h5></h1>
-		</div>
+	<div class="logo navbar-left">
+	<h1 id="brand"><a href="index.html"><img class="logoimage" src="login/images/EAI.png" />	EAI SOCIETY </a><br><h5 style="opacity:0.6">Exploration and Analysis of Information</h5></h1>
+</div>
 		<!-- <div class="h_search navbar-right">
 			<form>
 				<input type="text" class="text" value="Enter text here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter text here';}">
@@ -55,9 +55,9 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
 		        <li><a href="index.php">Home</a></li>
-		        <li><a href="technology.php">Events</a></li>
-		        <li><a href="about.php">Membership</a></li>
-				<li  class="active"><a href="mem.php">Members</a></li>
+		        <li><a href="events.php">Events</a></li>
+		        <li><a href="membership.php">Membership</a></li>
+				<li  class="active"><a href="members.php">Members</a></li>
 
 		        <!-- <li><a href="blog.html">Blog</a></li> -->
 		        <li><a href="contact.php">Contact</a></li>
@@ -84,7 +84,7 @@
 			<div class="container">
 			<h2>Board Members</h2>
 			<div class="container-fluid speakerContainer" >
-			<a class="anchor" name="sandeepjoshi"></a>
+			<a  name="sandeepjoshi"></a>
 			<div class="col-sm-4">
 			<div class=" Speaker-box">
 			<img class="img-responsive loaded" data-original="login/images/c1.jpg" alt="" src="login/images/c1.jpg">
@@ -99,7 +99,7 @@
                             He is well connected with societal work  through various agencies and  have very much concern about green environment.</p>
 			</div>
 			</div>
-			<a class="anchor" name="rahulsaxena"></a>
+			<a  name="rahulsaxena"></a>
 			<div class="container-fluid speakerContainer" >
 			<div class="col-sm-8">
 			<h3>Mr. Rahul Saxena</h3>
@@ -130,7 +130,7 @@
 			</div>
 			</div>
 			
-			<a class="anchor"  name="monikajain"></a>
+			<a   name="monikajain"></a>
 			<div class="container-fluid speakerContainer">
 			<div class="col-sm-4">
 			<div class=" Speaker-box">
@@ -165,11 +165,11 @@
 	<div class="container">
 		<div class="row  footer">
 				<div style="float:right;">
-						Visitors<br>
-					<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
-					
-					
-				</div>
+					Visitors<br>
+				<img src="http://hitwebcounter.com/counter/counter.php?page=6805314&style=0008&nbdigits=7&type=page&initCount=0" border="0" >
+				
+				
+			</div>
 		</div>
 	</div>
 </div>
